@@ -16,6 +16,21 @@
 			path = Stroll;
 			sourceTree = "<group>";
 		};
+		C359DD452E8639B500410FDA /* Model */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C359DD462E8639BF00410FDA /* Views */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C359DD472E8639C700410FDA /* Resources */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +47,9 @@
 		C359DD2B2E86399F00410FDA = {
 			isa = PBXGroup;
 			children = (
+				C359DD472E8639C700410FDA /* Resources */,
+				C359DD462E8639BF00410FDA /* Views */,
+				C359DD452E8639B500410FDA /* Model */,
 				C359DD362E86399F00410FDA /* Stroll */,
 				C359DD352E86399F00410FDA /* Products */,
 			);
@@ -62,6 +80,9 @@
 			);
 			fileSystemSynchronizedGroups = (
 				C359DD362E86399F00410FDA /* Stroll */,
+				C359DD452E8639B500410FDA /* Model */,
+				C359DD462E8639BF00410FDA /* Views */,
+				C359DD472E8639C700410FDA /* Resources */,
 			);
 			name = Stroll;
 			packageProductDependencies = (
