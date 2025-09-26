@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+struct MatchCard: Identifiable {
+    let id = UUID()
+    let imageName: String
+    let title: String
+    let question: String
+    let prompt: String
+}

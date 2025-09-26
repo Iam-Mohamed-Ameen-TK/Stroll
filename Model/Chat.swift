@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+struct Chat: Identifiable {
+    let id = UUID()
+    let name: String
+    let message: String
+    let time: String
+    let avatar: String
+    let status: String?
+    let unreadCount: Int?
+}
