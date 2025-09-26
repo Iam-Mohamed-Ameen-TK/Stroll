@@ -9,10 +9,37 @@ import SwiftUI
 
 struct TabBarView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Spacer()
+            tabItem(imageName: "Tabbar1")
+            Spacer()
+            tabItem(imageName: "Tabbar2")
+            Spacer()
+            tabItem(imageName: "Tabbar3")
+            Spacer()
+            tabItem(imageName: "Tabbar4")
+            Spacer()
+        }
+        .padding(.top, 15)
+        .padding(.bottom, 25)
+        .frame(height: 80)
+        .background(Color(UIColor.systemBackground).opacity(0.06))
+    }
+    
+    @ViewBuilder
+    private func tabItem(imageName: String) -> some View {
+        Image(imageName)
+            .resizable()
+            .scaledToFit()
+            .frame(width: 52, height: 52)
     }
 }
 
-#Preview {
-    TabBarView()
+struct TabBarView_Previews: PreviewProvider {
+    static var previews: some View {
+        TabBarView()
+            .previewLayout(.sizeThatFits)
+            .preferredColorScheme(.dark)
+            .padding()
+    }
 }
